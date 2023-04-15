@@ -1,10 +1,13 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import ReactDOM from 'react-dom/client';
+
+//Los functional components siempre van capitalizados.
+import { HelloWorldApp } from './HelloWorldApp';
+import { FirstApp } from './FirstApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+    <React.StrictMode>
+        <HelloWorldApp/>
+        <FirstApp/>
+    </React.StrictMode>
+);
