@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         {/* Para mandar numeros u otro tipo de dato distinto a 
         las strings se emplea {} en lugar de "" */}
-        <FirstApp title="Hola soy zeyan." subTitle={123}/>
+        <FirstApp />
         {/* <FirstApp title = "Hola, soy Zeyan" subTitle={123}/> */}
     </React.StrictMode>
 );

@@ -19,7 +19,7 @@ import PropTypes from 'prop-types'
 
 
 
-export const FirstApp = ({title,subTitle}) => {
+export const FirstApp = ({title,subTitle,name}) => {
 
 
 // console.log(props);
@@ -38,6 +38,7 @@ export const FirstApp = ({title,subTitle}) => {
       <h1>{title}</h1>
       {/* <code>{JSON.stringify(newMessage)}</code> */}
       <p>{subTitle}</p>
+      <p>{name}</p>
       </>
   )
 }
@@ -47,5 +48,12 @@ export const FirstApp = ({title,subTitle}) => {
 //Con isRequired nos obliga a ser utilizado.
 FirstApp.propTypes = {
   title:PropTypes.string.isRequired,
-  subTitle:PropTypes.number.isRequired,
+  subTitle:PropTypes.string,
+}
+
+
+FirstApp.defaultProps = {
+  name:'Jorge Bugarini',
+  subTitle : 'No hay subtitulo',
+  title:'No hay titulo',
 }
