@@ -6,7 +6,7 @@ import { HelloWorldApp } from './HelloWorldApp';
 //Aplicacion de estilos de css.
 import './style.css'
 import { FirstApp } from './FirstApp';
-import CounterApp from './CounterApp';
+import {CounterApp} from './CounterApp';
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         {/* Para mandar numeros u otro tipo de dato distinto a 
