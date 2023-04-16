@@ -9,6 +9,9 @@ import { FirstApp } from './FirstApp';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <FirstApp/>
+        {/* Para mandar numeros u otro tipo de dato distinto a 
+        las strings se emplea {} en lugar de "" */}
+        <FirstApp title = "Hola, soy Zeyan"/>
+        {/* <FirstApp title = "Hola, soy Zeyan" subTitle={123}/> */}
     </React.StrictMode>
 );

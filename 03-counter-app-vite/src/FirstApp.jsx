@@ -9,10 +9,13 @@
 // const getSaludo= (nombre) => `Hola ${nombre}`;
 //Esto es util ya que react no necesitara reprocesarlo ya que esta fuera del componente.
 
-export const FirstApp = () => {
+// Los props ya no se utilizan ya que 
+// ahora se utiliza la desestructuracion.
+// export const FirstApp = ({title = ' Hola soy Zeyan'}) => {
+export const FirstApp = ({title,subTitle}) => {
 
 
-
+// console.log(props);
 
   return (
     <>
@@ -21,9 +24,9 @@ export const FirstApp = () => {
     podemos usar la expresion JSON.stringify ya que no podemos imprimir el objeto directamente. 
     No pueden ser  funciones asincronas debido a que estas esperan objetos de tipo promesa*/}
       {/* <h1>{getSaludo('Valentina')}</h1> */}
-      <h1>Jorge Bugarini</h1>
+      <h1>{title}</h1>
       {/* <code>{JSON.stringify(newMessage)}</code> */}
-      <p>Primera aplicacion.</p>
+      <p>{subTitle}</p>
       </>
   )
 }
