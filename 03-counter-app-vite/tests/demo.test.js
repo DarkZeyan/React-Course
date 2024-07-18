@@ -16,7 +16,7 @@ test('Esta prueba no deberia fallar', () =>{
 
 
     // ToBe es un metodo que compara si dos valores son iguales
-    // Y pasa la prueba si son iguales
+    // Y pasa la prueba si son igualesa
     expect(message1).toBe(message2);
 
 
